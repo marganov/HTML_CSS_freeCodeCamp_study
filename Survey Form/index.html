@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <h1 id="title">CryptoBoom casino survey form</h1>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <p id="description">Help us improve our service! Complete this survey and share your feedback about CryptoBoom. We will definitely consider every opinion</p>      
+  <!--TODO link in action-->
+  <form id="survey-form" action="" method="post">
+    <fieldset>
+    <label for="name" id="name-label">Enter your name:<input type="text" id="name" placeholder="name"></label>
+    <label for="email" id="email-label">Email<input type="email" id="email" placeholder="exemple@site.com"></label>
+    <label for="number" id="number-label">Number<input type="number" id="number" min="1" max="5" placeholder="from 1 to 5"></label>
+    </fieldset>
+    <fieldset>
+    <select name="siteSpeed" id="dropdown">Are you satisfied with the website's speed?
+      <option value="">(select one)</option>
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+      <option value="3">Not sure</option>
+    </select>
+    </fieldset>
+    <fieldset>
+      <legend>Type of your account</legend>
+      <label for="regular-account"><input type="radio" id="regular-account" name="account-type" class="inline" checked>Regular</label>
+      <label for="vip-account"><input type="radio" id="vip-account" name="account-type" class="inline"></label>
+    </fieldset>
+    <fieldset>
+      <legend>What kind of games do you prefer?</legend>
+      <label for="what-games">
+        <input type="checkbox" class="checkbox-what-games" id="what-games" value="roulette">Live roulette
+        <input type="checkbox" class="checkbox-what-games" id="what-games" value="cards">Live Card games
+        <input type="checkbox" class="checkbox-what-games" id="what-games" value="slots">Slots
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Any comments?</legend>
+      <label for="any-comments">
+        <textarea name="comments" id="comments" rows="3" cols="30" placeholder="A few words..."></textarea>
+      </label>
+    </fieldset>
+      <legend>Thanks for your answers. Good luck!</legend>
+      <input id="submit" type="submit" value="Submit">
+  </form>
+  </body>
+</html>
